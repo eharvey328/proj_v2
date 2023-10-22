@@ -1,0 +1,2371 @@
+const IzhorkiHtml = `<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="izhorki.fld/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sofya Iskakova</o:Author>
+  <o:LastAuthor>Philip Gessen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>33</o:TotalTime>
+  <o:LastPrinted>1995-11-21T22:41:00Z</o:LastPrinted>
+  <o:Created>2023-10-05T02:23:00Z</o:Created>
+  <o:LastSaved>2023-10-05T02:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1359</o:Words>
+  <o:Characters>7748</o:Characters>
+  <o:Lines>64</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>9089</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="izhorki.fld/themedata.thmx">
+<link rel=colorSchemeMapping href="izhorki.fld/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayBackgroundShape/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:AdjustLineHeightInTable/>
+   <w:DoNotUseHTMLParagraphAutoSpacing/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:宋体;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:"Liberation Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:NSimSun;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Liberation Sans";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:"Segoe UI Symbol";
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:serif;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@NSimSun";
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@Microsoft YaHei";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:24.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:7.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:14.0pt;
+	font-family:"Liberation Sans",sans-serif;
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:maroon;
+	text-decoration:underline;
+	text-underline:single;}
+span.WW8Num1z0
+	{mso-style-name:WW8Num1z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z1
+	{mso-style-name:WW8Num1z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z2
+	{mso-style-name:WW8Num1z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z3
+	{mso-style-name:WW8Num1z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z4
+	{mso-style-name:WW8Num1z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z5
+	{mso-style-name:WW8Num1z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z6
+	{mso-style-name:WW8Num1z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z7
+	{mso-style-name:WW8Num1z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z8
+	{mso-style-name:WW8Num1z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z0
+	{mso-style-name:WW8Num2z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num3z0
+	{mso-style-name:WW8Num3z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num4z0
+	{mso-style-name:WW8Num4z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num5z0
+	{mso-style-name:WW8Num5z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num6z0
+	{mso-style-name:WW8Num6z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num8z0
+	{mso-style-name:WW8Num8z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num9z0
+	{mso-style-name:WW8Num9z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num10z0
+	{mso-style-name:WW8Num10z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z1
+	{mso-style-name:WW8Num10z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z2
+	{mso-style-name:WW8Num10z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z3
+	{mso-style-name:WW8Num10z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z4
+	{mso-style-name:WW8Num10z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z5
+	{mso-style-name:WW8Num10z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z6
+	{mso-style-name:WW8Num10z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z7
+	{mso-style-name:WW8Num10z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z8
+	{mso-style-name:WW8Num10z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z1
+	{mso-style-name:WW8Num9z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z2
+	{mso-style-name:WW8Num9z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z3
+	{mso-style-name:WW8Num9z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z4
+	{mso-style-name:WW8Num9z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z5
+	{mso-style-name:WW8Num9z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z6
+	{mso-style-name:WW8Num9z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z7
+	{mso-style-name:WW8Num9z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z8
+	{mso-style-name:WW8Num9z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z1
+	{mso-style-name:WW8Num7z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z2
+	{mso-style-name:WW8Num7z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z3
+	{mso-style-name:WW8Num7z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z4
+	{mso-style-name:WW8Num7z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z5
+	{mso-style-name:WW8Num7z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z6
+	{mso-style-name:WW8Num7z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z7
+	{mso-style-name:WW8Num7z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num7z8
+	{mso-style-name:WW8Num7z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z1
+	{mso-style-name:WW8Num3z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z2
+	{mso-style-name:WW8Num3z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z3
+	{mso-style-name:WW8Num3z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z4
+	{mso-style-name:WW8Num3z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z5
+	{mso-style-name:WW8Num3z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z6
+	{mso-style-name:WW8Num3z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z7
+	{mso-style-name:WW8Num3z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z8
+	{mso-style-name:WW8Num3z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z1
+	{mso-style-name:WW8Num2z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z2
+	{mso-style-name:WW8Num2z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z3
+	{mso-style-name:WW8Num2z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z4
+	{mso-style-name:WW8Num2z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z5
+	{mso-style-name:WW8Num2z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z6
+	{mso-style-name:WW8Num2z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z7
+	{mso-style-name:WW8Num2z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z8
+	{mso-style-name:WW8Num2z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.Bullets
+	{mso-style-name:Bullets;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:OpenSymbol;
+	mso-ascii-font-family:OpenSymbol;
+	mso-fareast-font-family:OpenSymbol;
+	mso-hansi-font-family:OpenSymbol;
+	mso-bidi-font-family:OpenSymbol;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Liberation Sans",sans-serif;
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.TableContents, li.TableContents, div.TableContents
+	{mso-style-name:"Table Contents";
+	mso-style-unhide:no;
+	margin:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.TableHeading, li.TableHeading, div.TableHeading
+	{mso-style-name:"Table Heading";
+	mso-style-unhide:no;
+	mso-style-parent:"Table Contents";
+	margin:0in;
+	text-align:center;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-weight:bold;}
+p.HorizontalLine, li.HorizontalLine, div.HorizontalLine
+	{mso-style-name:"Horizontal Line";
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:14.15pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	border:none;
+	mso-border-alt:none black 0in;
+	mso-border-bottom-alt:double gray .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:6.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:NSimSun;
+	mso-bidi-font-family:"Lucida Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:56.7pt 56.7pt 56.7pt 56.7pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:none;
+	mso-level-style-link:"Heading 1";
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level3
+	{mso-level-number-format:none;
+	mso-level-style-link:"Heading 3";
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=navy vlink=maroon style='tab-interval:35.45pt;word-wrap:
+break-word;line-break:strict'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><u><span lang=RU
+style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>СПИСОК
+РАССТРЕЛЯННЫХ ЖЕНЩИН-ИЖОРОК В АЛФАВИТНОМ ПОРЯДКЕ<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>В СССР в годы<span style='mso-spacerun:yes'>  </span>Большого
+террора<span style='mso-spacerun:yes'>  </span>с 1937 по 1938 гг. было
+расстреляно 15 женщин-ижорок.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Данный список составлен на основе открытых и доступных на
+интернете источников и не претендует быть ни полным ни окончательным.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Согласно переписи населения 1937 года общая численность ижоров
+проживавших в СССР составляла 8 622 человек, таким образом 15 расстрелянных ижорок
+это безвозвратные потери нации которые составляют 0,17% от общего числа ижоров
+проживавших на тот момент в СССР<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Все 15 женщин осуждены Особой тройкой УНКВД ЛО<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Все 15 женщин рассреляны и захоронены Ленинграде<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>10 (67%) - расстреляно в 1938 году<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>максимальное число — 4 (27%) - расстреляно в возрастной
+группе: 31-35лет.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>14 женщин родились и проживали<span
+style='mso-spacerun:yes'>  </span>деревнях и хуторах Ленинградской области<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>У одной женщины расстрелян муж<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Реабилитирована – 1<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;line-height:normal'><b><span
+lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+RU'>Партийность:</span></b><span lang=RU style='font-size:8.0pt;font-family:
+"Arial",sans-serif;mso-ansi-language:RU'> Беспартийные — 13 (87%) , членВКП(б)
+— 1;<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:RU'>Профессия/социальная страта:</span></b><span lang=RU
+style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'> судомойка
+– 3; монашка – 3; домохозяйка – 2, колхозница – 2; сторож; педагог; рабочая<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+ width=420 style='border-collapse:collapse;mso-table-layout-alt:fixed;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:page;
+ mso-table-left:95.4pt;mso-table-top:2.95pt;mso-padding-alt:1.4pt 1.4pt 1.4pt 1.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.3in'>
+  <td width=420 colspan=2 style='width:315.15pt;border:double gray 1.0pt;
+  mso-border-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;height:.3in'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:page;
+  mso-element-left:95.45pt;mso-element-top:2.95pt;mso-height-rule:exactly'><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  SimSun;mso-ansi-language:RU'>ДАННОМ </span></b><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>СПИСКЕ
+  УКАЗАНЫ ИМЕНА 15-и РАССТРЕЛЯННЫХ ЖЕНЩИН - ИЖОРОК</span></b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=420 colspan=2 style='width:315.15pt;border:double gray 1.0pt;
+  border-top:none;mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:
+  double gray .75pt;mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:95.45pt;mso-element-top:
+  2.95pt;mso-height-rule:exactly'><b><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Расстрелы ижорок
+  происходили только в годы Большого террора </span></b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=212 style='width:158.9pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText align=center style='margin-bottom:0in;text-align:center;
+  layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:0in;
+  mso-padding-alt:0in 0in 0in 0in;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:95.45pt;mso-element-top:
+  2.95pt;mso-height-rule:exactly'><span lang=RU style='font-size:8.0pt;
+  line-height:115%;font-family:"Arial",sans-serif;mso-ansi-language:RU'>1937<o:p></o:p></span></p>
+  </div>
+  </td>
+  <td width=208 style='width:156.25pt;border-top:none;border-left:none;
+  border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;mso-border-left-alt:
+  double gray .75pt;mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:
+  double gray .75pt;mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText align=center style='margin-bottom:0in;text-align:center;
+  layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:0in;
+  mso-padding-alt:0in 0in 0in 0in;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:95.45pt;mso-element-top:
+  2.95pt;mso-height-rule:exactly'><span lang=RU style='font-size:8.0pt;
+  line-height:115%;font-family:"Arial",sans-serif;mso-ansi-language:RU'>1938<o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=212 style='width:158.9pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText align=center style='margin-bottom:0in;text-align:center;
+  layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:0in;
+  mso-padding-alt:0in 0in 0in 0in;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:95.45pt;mso-element-top:
+  2.95pt;mso-height-rule:exactly'><span lang=RU style='font-size:8.0pt;
+  line-height:115%;font-family:"Arial",sans-serif;mso-ansi-language:RU'>5<o:p></o:p></span></p>
+  </div>
+  </td>
+  <td width=208 style='width:156.25pt;border-top:none;border-left:none;
+  border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;mso-border-left-alt:
+  double gray .75pt;mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:
+  double gray .75pt;mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText align=center style='margin-bottom:0in;text-align:center;
+  layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:0in;
+  mso-padding-alt:0in 0in 0in 0in;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:95.45pt;mso-element-top:
+  2.95pt;mso-height-rule:exactly'><span lang=RU style='font-size:8.0pt;
+  line-height:115%;font-family:"Arial",sans-serif;mso-ansi-language:RU'>10<o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+
+<p class=MsoBodyText style='margin-bottom:0in;line-height:normal;tab-stops:
+0in;layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:
+0in;mso-padding-alt:0in 0in 0in 0in'><b><i style='mso-bidi-font-style:normal'><span
+lang=RU style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+RU'><o:p>&nbsp;</o:p></span></i></b></p>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+ width=728 style='border-collapse:collapse;mso-table-layout-alt:fixed;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+ mso-table-left:center;mso-table-top:-.75pt;mso-padding-alt:1.4pt 1.4pt 1.4pt 1.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.2in'>
+  <td width=728 colspan=7 style='width:546.1pt;border:double gray 1.0pt;
+  mso-border-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;height:.2in'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>ВОЗРАСТНАЯ ТАБЛИЦА / ЧИСЛО<span style='mso-spacerun:yes'> 
+  </span>РАССТРЕЛЯННЫХ ЖЕНЩИН<span style='mso-spacerun:yes'>  </span>за период
+  с 1937 по 1942гг.<span style='mso-spacerun:yes'>   </span>(Возрастной
+  разброс<span style='mso-spacerun:yes'>  </span>24-53) </span></b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>21</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>25</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>26</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>30</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>31</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>35</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>36</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>40</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>41</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-4</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>5</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>46-50</span></p>
+  </td>
+  <td width=104 style='width:78.1pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=TableContents align=center style='text-align:center;layout-grid-mode:
+  char;mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:margin;
+  mso-element-left:center;mso-element-top:-.75pt;mso-height-rule:exactly'><span
+  lang=RU style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif;mso-ansi-language:RU'>51</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:serif;
+  mso-bidi-font-family:serif'>-</span><span lang=RU style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:serif;mso-bidi-font-family:serif;
+  mso-ansi-language:RU'>55</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:13.8pt'>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>1</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>1</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>4</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>2</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>3</span></p>
+  </td>
+  <td width=104 style='width:78.0pt;border-top:none;border-left:double gray 1.0pt;
+  border-bottom:double gray 1.0pt;border-right:none;mso-border-left-alt:double gray .75pt;
+  mso-border-bottom-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>2</span></p>
+  </td>
+  <td width=104 style='width:78.1pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt;
+  height:13.8pt'>
+  <p class=TableContents align=center style='margin-left:12.0pt;text-align:
+  center;text-indent:-9.0pt;layout-grid-mode:char;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-left:center;mso-element-top:
+  -.75pt;mso-height-rule:exactly'><span lang=RU style='font-size:10.0pt;
+  font-family:serif;mso-bidi-font-family:serif;mso-ansi-language:RU'>2</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><span style='font-size:8.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-ansi-language:RU'><span
+style='mso-spacerun:yes'> </span><span lang=RU><o:p></o:p></span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=736
+ style='margin-left:-22.0pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+ mso-padding-alt:1.4pt 1.4pt 1.4pt 1.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;mso-border-alt:
+  double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Александрова Пелагея Васильевна<span
+  style='mso-spacerun:yes'>  </span>32 года<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>1906</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>г. р., уроженка д. Новое</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>Гарколово Кингисеппского р-на
+  Лен. обл., ижорка, б/п, член колхоза «Ловколово», проживала: д.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>Ловколово Кингисеппского
+  р-на. Арестована 18 января 1938</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>г. Особой тройкой УНКВД ЛО 15 октября 1938 г.
+  приговорена по ст. 58-1а УК РСФСР к ВМН. Расстреляна в г. Ленинград 22
+  октября 1938 г.</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  <p class=MsoNormal style='layout-grid-mode:char'><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 11;<span style='mso-spacerun:yes'>  
+  </span></span></b><a
+  href="https://ru.openlist.wiki/Александрова_Пелагея_Васильевна_(1906)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='mso-ansi-language:
+  RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><b
+  style='mso-bidi-font-weight:normal'><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Андреева Елена
+  Васильевна<span style='mso-spacerun:yes'>  </span>51 года<span
+  style='mso-spacerun:yes'>  </span></span></b><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Родилась</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>в 1887 г., д. Ловколово Кингисеппского р-на Лен. обл.; ижорка; б/п; член колхоза
+  &quot;Ловколово&quot;.. Проживала:</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>д. Ловколово
+  Кингисеппского р-на Лен. Обл.. Приговорена: Комиссией НКВД и Прокуратуры СССР
+  17 января 1938 г., обв.:</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>ст. ст. 58-1а-6-9-11 УК РСФСР.<span style='mso-spacerun:yes'>  
+  </span>Приговор: ВМН Расстреляна 27 января 1938 г. Место захоронения</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>- г. Ленинград.<o:p></o:p></span></p>
+  </div>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:9.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><i style='mso-bidi-font-style:normal'><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 8;<span style='mso-spacerun:yes'>  
+  </span></span></i></b><a
+  href="https://ru.openlist.wiki/Андреева_Елена_Васильевна_(1887)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Борисова Анастасия Григорьевна<span
+  style='mso-spacerun:yes'>  </span>37 лет<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>1901 г. р., уроженка д.
+  Глинки Кингисеппского р-на Лен. обл., ижорка, б/п, домохозяйка, проживала: д.
+  Репино Кингисеппского р-на. Арестована 15 января 1938 г. Комиссией НКВД и
+  Прокуратуры СССР 29 марта 1938 г. приговорена по ст. 58-1а к ВМН. Расстреляна
+  в г. Ленинград 5 апреля 1938 г.</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><i style='mso-bidi-font-style:normal'><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 9;<span style='mso-spacerun:yes'>  
+  </span></span></i></b><a href="https://base.memo.ru/person/show/2733184"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Иванова Наталия Ивановна<span
+  style='mso-spacerun:yes'>  </span>43 года<span style='mso-spacerun:yes'> 
+  </span><span style='mso-spacerun:yes'>   </span></span></b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;tab-stops:
+  0in;layout-grid-mode:char;border:none;mso-border-alt:none black 0in;
+  padding:0in;mso-padding-alt:0in 0in 0in 0in'><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>1895 г. р.,
+  уроженка д. Липово Кингисеппского р-на Лен. обл., ижорка, б/п, в прошлом
+  монахиня. Арестована 2 марта 1938 г. Особой тройкой УНКВД ЛО 20 марта 1938 г.
+  приговорена по ст. ст. 58-10-11 УК РСФСР к ВМН. Расстреляна в г. Ленинград 9
+  апреля 1938 г. <o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;tab-stops:
+  0in;layout-grid-mode:char;border:none;mso-border-alt:none black 0in;
+  padding:0in;mso-padding-alt:0in 0in 0in 0in'><b><i style='mso-bidi-font-style:
+  normal'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источник: Ленинградский мартиролог: 1937-1938, том 9;<span
+  style='mso-spacerun:yes'>   </span></span></i></b><a
+  href="https://base.memo.ru/person/show/2743732"><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Открытый
+  список</span></b></a><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Иванова Татьяна Егоровна<span
+  style='mso-spacerun:yes'>  </span>33 года<span style='mso-spacerun:yes'> 
+  </span><span style='mso-spacerun:yes'>  </span></span></b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1904 г. р., уроженка и жительница д. Б. Куземкино
+  Кингисеппского р-на Лен. обл., ижорка, б/п, судомойка столовой 133-го
+  стрелкового полка ЛВО. Арестована 26 июля 1937 г. Комиссией НКВД и
+  Прокуратуры СССР 10 декабря 1937 г. приговорена по ст. ст. 58-1а-9-11 УК
+  РСФСР к ВМН. Расстреляна в г. Ленинград 16 декабря 1937 г. <o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источники данных: Ленинградский мартиролог: 1937-1938;
+  Центр &quot;Возвращенные имена&quot;;<span style='mso-spacerun:yes'>  
+  </span></span><a
+  href="https://ru.openlist.wiki/Иванова_Татьяна_Егоровна_(1904)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Кондратьева Татьяна Ерофеевна<span style='mso-spacerun:yes'>  </span>47
+  лет<span style='mso-spacerun:yes'>  </span></span></b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>1890 г. р., уроженка д. Пахомовка
+  Кингисеппского р-на Лен. обл., ижорка, б/п, БОЗ б. монашка Козьегорского
+  монастыря, проживала: д. Сонкино Кингисеппского р-на. Арестована 24 сентября
+  1937 г. Особой тройкой УНКВД ЛО 15 ноября 1937 г. приговорена по ст. ст.
+  58-10-11 УК РСФСР к ВМН. Расстреляна в г. Ленинград 19 ноября 1937 г.<b><span
+  style='mso-spacerun:yes'>  </span></b></span><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><i
+  style='mso-bidi-font-style:normal'><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU;mso-bidi-font-weight:
+  bold'>Источник: Ленинградский мартиролог: 1937-1938, том 3;<span
+  style='mso-spacerun:yes'>   </span></span></i><a
+  href="https://ru.openlist.wiki/Кондратьева_Татьяна_Ерофеевна_(1890)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Лаврентьева Альма Андреевна<span
+  style='mso-spacerun:yes'>  </span>24 года<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1914 г. р., уроженка хут. Белое Озеро Кингисеппского
+  р-на Лен. обл., ижорка, б/п, судомойка 33-го стрелкового полка, проживала: д.
+  Остров Кингисеппского р-на. Арестована 28 ноября 1937 г. Комиссией НКВД и
+  Прокуратуры СССР 3 января 1938 г. приговорена по ст. ст. 58-1а-9-11 УК РСФСР
+  к ВМН. Расстреляна в г. Ленинград 8 января 1938 г.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;tab-stops:
+  0in;layout-grid-mode:char;border:none;mso-border-alt:none black 0in;
+  padding:0in;mso-padding-alt:0in 0in 0in 0in'><strong><i style='mso-bidi-font-style:
+  normal'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источник: Ленинградский мартиролог: 1937-1938, том 7;<span
+  style='mso-spacerun:yes'>   </span></span></i></strong><a
+  href="https://ru.openlist.wiki/Лаврентьева_Альма_Андреевна_(1914)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Матвеева-Панфилова</span></b><b><span style='font-size:
+  8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></b><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Анастасия
+  Панфиловна<span style='mso-spacerun:yes'>  </span>47 лет<span
+  style='mso-spacerun:yes'>  </span></span></b><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1890 г. р., уроженка и жительница д. Ловколово
+  Кингисеппского р-на Лен. обл., ижорка, б/п,<span style='mso-spacerun:yes'> 
+  </span>б. монашка Козьегорского монастыря. Арестована 24 сентября 1937 г.
+  Особой тройкой УНКВД ЛО 15 ноября 1937 г. приговорена по ст. ст. 58-10-11 УК
+  РСФСР к ВМН. Расстреляна в г. Ленинград 19 ноября 1937 г.<span
+  style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><i style='mso-bidi-font-style:normal'><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 3;<span style='mso-spacerun:yes'>  
+  </span></span></i></b><a
+  href="https://ru.openlist.wiki/Матвеева-Панфилова_Анастасия_Панфиловна_(1890)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><b
+  style='mso-bidi-font-weight:normal'><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Николаева Анастасия
+  Ивановна<span style='mso-spacerun:yes'>  </span>39 лет<span
+  style='mso-spacerun:yes'>  </span></span></b><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>Родилась&nbsp;в 1898 г., Ленинградская обл.,
+  Кингисеппский р-н, д. Куземкино; ижорка; б/п; Домохозяйка.
+  Проживала:&nbsp;Ленинградская обл., г. Кингисепп.<span
+  style='mso-spacerun:yes'>  </span>Арестована 21 октября 1937 г.<span
+  style='mso-spacerun:yes'>  </span>Приговорена: Комиссия НКВД и прокуратуры
+  СССР 10 декабря 1937 г., обв.:&nbsp;58-1а-9-11 УК РСФСР.<span
+  style='mso-spacerun:yes'>  </span>Расстреляна 16 декабря 1937 г. </span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><b><i
+  style='mso-bidi-font-style:normal'><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник: Ленинградский
+  мартиролог: 1937-1938, том 4;<span style='mso-spacerun:yes'>   </span></span></i></b><a
+  href="https://ru.openlist.wiki/Николаева_Анастасия_Ивановна_(1898)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Паю Ольга Михайловна<span style='mso-spacerun:yes'> 
+  </span>43 года<span style='mso-spacerun:yes'>  </span></span></b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;border:none;
+  mso-border-alt:none black 0in;padding:0in;mso-padding-alt:0in 0in 0in 0in'><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Родилась</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>в 1895 г., Эстония; ижорка; Совхоз &quot;Индустрия&quot;, рабочая.
+  Проживала:</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Мурманская обл., Кировский р-н, пос. Апатиты, Рыбпромхоз, д. 2..<span
+  style='mso-spacerun:yes'>  </span>Арестована 21 июня 1938 г.<span
+  style='mso-spacerun:yes'>  </span>Приговорена: тройка при УНКВД по Мурманской
+  обл. 5 ноября 1938 г., обв.:</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>ст. 58-6-10-11 УК..<br>
+  Приговор: ВМН. Расстреляна 22 ноября 1938 г. Реабилитирована 7 марта 1957 г.
+  Военным трибуналом Северного военного округа.<o:p></o:p></span></p>
+  </div>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:9.0pt'>
+  <p class=MsoBodyText style='margin-bottom:3.0pt;line-height:normal;
+  layout-grid-mode:char;border:none;mso-border-alt:none black 0in;padding:0in;
+  mso-padding-alt:0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник: Книга памяти
+  Мурманской обл.;<span style='mso-spacerun:yes'>   </span></span></b><a
+  href="https://ru.openlist.wiki/Паю_Ольга_Михайловна_(1895)"><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Открытый
+  список</span></b></a><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Таппи Мария Фоминична<span style='mso-spacerun:yes'> 
+  </span>53 года<span style='mso-spacerun:yes'>  </span></span></b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1885</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>г.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>р., уроженка и жительница д.</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Федоровка
+  Кингисеппского р-на Лен. обл., ижорка, б/п, крестьянка, жила на иждивении
+  сыновей. Арестована 28 февраля 1938</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>г. Особой тройкой
+  УНКВД ЛО 19 октября 1938</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>г. приговорена по ст. 58-6 УК РСФСР к ВМН. Расстреляна в г.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Ленинград 27 октября 1938</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>г.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><i style='mso-bidi-font-style:normal'><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 11;<span style='mso-spacerun:yes'>  
+  </span></span></i></b><a
+  href="https://ru.openlist.wiki/Таппи_Мария_Фоминична_(1885)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><b style='mso-bidi-font-weight:normal'><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'> </span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <p class=MsoNormal><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Тихомирова Екатерина Ивановна<span
+  style='mso-spacerun:yes'>  </span>31 год<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1907 г. р., уроженка и жительница д. Краколье
+  Кингисеппского р-на Лен. обл., ижорка, б/п, судомойка 33-го стрелкового
+  полка. Арестована 28 ноября 1937 г. Комиссией НКВД и Прокуратуры СССР 3
+  января 1938 г. приговорена по ст. ст. 58-1а-9-11 УК РСФСР к ВМН. Расстреляна
+  в г. Ленинград 8 января 1938 г. <o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источник: Ленинградский мартиролог: 1937-1938, том 7;<span
+  style='mso-spacerun:yes'>   </span></span></b><a
+  href="https://ru.openlist.wiki/Тихомирова_Екатерина_Ивановна_(1907)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Толкачева София Егоровна<span
+  style='mso-spacerun:yes'>  </span>43 года<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>1895</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>г.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>р., уроженка д.</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Липово Кингисеппского р-на Лен. обл., ижорка, б/п, сторож гаража
+  Дорстроя, проживала: хут.</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>Мгновение Кингисеппского
+  р-на Лен. обл. Арестована 23 июня 1938</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>г. Особой тройкой
+  УНКВД ЛО 1 октября 1938</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>г. приговорена по ст. 58-1а УК РСФСР к ВМН. Расстреляна в г.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Ленинград 6 октября 1938</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>г.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источник: Ленинградский мартиролог: 1937-1938, том 11</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'>;<span
+  style='mso-spacerun:yes'>   </span></span></b><a
+  href="https://base.memo.ru/person/show/2769062"><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Открытый
+  список</span></b></a><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Федорова Екатерина Михайловна<span
+  style='mso-spacerun:yes'>  </span>32 года<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>1905 г. р., уроженка и
+  жительница д. Куземкино Кингисеппского р-на Лен. обл., ижорка, член ВКП(б) в
+  1926-1937 гг., педагог неполной средней школы. Арестована 11 октября 1937 г.
+  Комиссией НКВД и Прокуратуры СССР 10 декабря 1937 г. приговорена по ст. ст. 58-1а-9-11
+  УК РСФСР к ВМН. Расстреляна в г. Ленинград 16 декабря 1937 г.</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Источник: Ленинградский мартиролог: 1937-1938, том 4;<span
+  style='mso-spacerun:yes'>   </span></span></b><a
+  href="https://ru.openlist.wiki/Федорова_Екатерина_Михайловна_(1905)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-yfti-lastrow:yes'>
+  <td width=736 style='width:551.95pt;border:double gray 1.0pt;border-top:none;
+  mso-border-left-alt:double gray .75pt;mso-border-bottom-alt:double gray .75pt;
+  mso-border-right-alt:double gray .75pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+  <div style='mso-element:para-border-div;border:none black 1.0pt;mso-border-alt:
+  none black 0in;padding:0in 0in 0in 0in;margin-left:0in;margin-right:3.0pt'>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'>Яковлева Анастасия Михайловна<span
+  style='mso-spacerun:yes'>  </span>29 лет<span style='mso-spacerun:yes'> 
+  </span></span></b><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:0in;line-height:normal;layout-grid-mode:
+  char;border:none;mso-border-alt:none black 0in;padding:0in;mso-padding-alt:
+  0in 0in 0in 0in'><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>1909</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>г.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>р., уроженка д.</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>Глинки Кингисеппского р-на
+  Лен. обл., ижорка, б/п, резчица рыбы на Логовском консервном заводе,
+  проживала д.</span><span style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-bidi-font-weight:bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-ansi-language:RU;mso-bidi-font-weight:
+  bold'>Логи Кингисеппского р-на. Арестована 13</span><span style='font-size:
+  8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>июня 1938</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>г. Особой тройкой УНКВД ЛО 7 октября 1938</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>г. приговорена по ст. 58-1а
+  УК РСФСР к ВМН. Расстреляна в г.</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>Ленинград 14 октября 1938</span><span
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-bidi-font-weight:
+  bold'>&nbsp;</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU;mso-bidi-font-weight:bold'>г. (Ее муж Александр
+  Антонович Яковлев расстрелян 5</span><span style='font-size:8.0pt;font-family:
+  "Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU;
+  mso-bidi-font-weight:bold'>мая 1938</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>г.; ее мать Анастасия Федоровна Антипова,
+  сестра Акулина с мужем Федором Игнатьевичем Кирилловым и жена ее дяди Домна
+  Антипова высланы в Казахстан в 1935</span><span style='font-size:8.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-font-weight:bold'>&nbsp;</span><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU;mso-bidi-font-weight:bold'>г.; ее дядя Илья Федорович Антипов дважды
+  репрессирован.)</span><span lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;
+  mso-ansi-language:RU'><o:p></o:p></span></p>
+  </div>
+  <p class=MsoNormal style='layout-grid-mode:char'><b><span lang=RU
+  style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:RU'>Источник:
+  Ленинградский мартиролог: 1937-1938, том 11;<span style='mso-spacerun:yes'>  
+  </span></span></b><a
+  href="https://ru.openlist.wiki/Яковлева_Анастасия_Михайловна_(1909)"><b><span
+  lang=RU style='font-size:8.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+  RU'>Открытый список</span></b></a><span lang=RU style='font-size:9.0pt;
+  font-family:"Arial",sans-serif;color:#484745;mso-ansi-language:RU'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=RU style='mso-ansi-language:RU'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+` 
+export {IzhorkiHtml  }

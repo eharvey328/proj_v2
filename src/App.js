@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+// import Button from './custom/button';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/home'
+// import * as e from '.π/pages/exports'
+
+import 
+{LithuaniaComponent,
+GermansComponent,
+BelarussianComponent,
+IzhorkiComponent,
+PolandComponent,
+JewMasterlistComponent,
+UkraineComponent,
+GretchnayaComponent,
+ArmeniaComponent,
+// GeorgiansComponent
+} from './pages/exports'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/Lithuania" element={<LithuaniaComponent />} />
+            <Route path="/Germans" element={<GermansComponent />} />
+            <Route path="/Belarussian" element={<BelarussianComponent />} />
+            <Route path="/Izhorki" element={<IzhorkiComponent />} />
+            <Route path="/Poland" element={<PolandComponent />} />
+            <Route path="/JewMasterlist" element={<JewMasterlistComponent />} />
+            <Route path="/Ukraine" element={<UkraineComponent />} />
+            <Route path="/Gretchnaya" element={<GretchnayaComponent />} />
+            <Route path="/Armenia" element={<ArmeniaComponent />} />
+            {/* <Route path="/Georgians" element={<GeorgiansComponent />} /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
