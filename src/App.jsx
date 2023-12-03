@@ -6,7 +6,7 @@ import {БелорускиComponent, ПолькиComponent, ИжоркиComponen
 function App(){
     return (
         <div className="App">
-<HashRouter>
+<BrowserRouter>
 <Routes>
 <Route path="/" element={<Home/>}>
 </Route>
@@ -29,7 +29,7 @@ function App(){
 <Route path='/Гречанки' element={<ГречанкиComponent/>}>
 </Route>
 </Routes>
-</HashRouter>
+</BrowserRouter>
 </div>
     )
 }

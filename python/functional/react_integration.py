@@ -35,7 +35,7 @@ def construct_home_page(component_names: list[str], src_root_dir):
     for c in component_names:
         li = ET.Element('li')
         a = ET.Element('a')
-        a.set('href', f"/#/{c.replace('Component','')}")
+        a.set('href', f"/{c.replace('Component','')}")
         a.text = c.replace('Component','')
 
         li.append(a)
@@ -61,7 +61,7 @@ import { Home } from './Home.jsx';
     appRoot = ElementJSX('div')
     appRoot.set('className','"App"')
 
-    router = ElementJSX('HashRouter')
+    router = ElementJSX('BrowserRouter')
     appRoot.append(router)
 
     routes = ElementJSX('Routes')
