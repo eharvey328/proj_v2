@@ -1,12 +1,12 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Home.jsx';
 import {БелорускиComponent, ПолькиComponent, ИжоркиComponent, АрмянкиComponent, ЕврейкиComponent, УкраинкиComponent, ЛитовкиComponent, НемкиComponent, ГречанкиComponent} from "./page_exports.jsx";
 
 function App(){
     return (
         <div className="App">
-<BrowserRouter>
+<HashRouter>
 <Routes>
 <Route path="/" element={<Home/>}>
 </Route>
@@ -29,7 +29,7 @@ function App(){
 <Route path='/Гречанки' element={<ГречанкиComponent/>}>
 </Route>
 </Routes>
-</BrowserRouter>
+</HashRouter>
 </div>
     )
 }
