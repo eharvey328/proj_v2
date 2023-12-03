@@ -5,4 +5,11 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+}
+
+table {
+  width: 800px;
+  margin: auto;
 }
