@@ -1,5 +1,5 @@
 
-function ЕврейкиComponent (){
+function ЕврейкиComponent (){
     return (
         <div dangerouslySetInnerHTML={{__html: `<html><head><style>
         table, th, td {
@@ -11036,5 +11036,5 @@ function ЕврейкиComponent (){
     )
 }
 
-export {ЕврейкиComponent}
+export {ЕврейкиComponent}
     
