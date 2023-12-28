@@ -1,6 +1,9 @@
 import xml.etree.ElementTree as ET
 from functional.jsx_component import ElementJSX
 
+base_route='/proj_v2/'
+router = 'BrowserRouter'
+
 def get_component_import_string_and_list_from_page_exports_filepath(src_root_filepath):
     export_line = ''
     page_exports_filepath = src_root_filepath+'/page_exports.jsx'
@@ -25,35 +28,43 @@ def construct_jsx_component_string(component_name, component_jsx):
 '''
 
 def construct_home_page(component_names: list[str], src_root_dir):
-    homeRoot = ET.Element('div')
-    homeRoot.attrib['className'] = 'Home'
+    global router, base_route
+    import_string = 'import { Link } from "react-router-dom"\n'
 
-    ol = ET.Element('ol')
+    homeRoot = ElementJSX('div')
+    homeRoot.set('className', '"Home"')
+
+    ol = ElementJSX('ol')
+    ol.set('style','{{"list-style-type": "none"}}')
 
     homeRoot.append(ol)
 
+    component_names = sorted(component_names)
+
     for c in component_names:
-        li = ET.Element('li')
-        a = ET.Element('a')
-        a.set('href', f"/{c.replace('Component','')}")
-        a.text = c.replace('Component','')
+        li = ElementJSX('li')
+        a = ElementJSX('Link')
+        a.set('to', f"'{base_route}{c.replace('Component','')}'")
+        a.append(c.replace('Component',''))
 
         li.append(a)
         ol.append(li)
     
-    home_component_jsx_string = ET.tostring(homeRoot,'UTF-8').decode('utf-8')
+    home_component_jsx_string = str(homeRoot)
 
     component_string = construct_jsx_component_string('Home', home_component_jsx_string)
 
-    f_string = component_string + f'\nexport {{ Home }}'
+    f_string = import_string + component_string + f'\nexport {{ Home }}'
 
     with open(src_root_dir +'/Home.jsx','w') as f:
         f.write(f_string)
 
 def construct_app_file(import_string: str, component_names: list[str], src_root_dir):
-    import_string = """import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './Home.jsx';
+    global router, base_route
+
+    import_string = f"""import './App.css';
+import {{ {router}, Routes, Route }} from 'react-router-dom';
+import {{ Home }} from './Home.jsx';
 """ + import_string +'\n'
 
     f_string = import_string + '\n'
@@ -61,20 +72,20 @@ import { Home } from './Home.jsx';
     appRoot = ElementJSX('div')
     appRoot.set('className','"App"')
 
-    router = ElementJSX('BrowserRouter')
+    router = ElementJSX(router)
     appRoot.append(router)
 
     routes = ElementJSX('Routes')
     router.append(routes)
 
     route = ElementJSX('Route')
-    route.set('path','"/"')
+    route.set('path',f'"{base_route}"')
     route.set('element','{<Home/>}')
     routes.append(route)
 
     for c in component_names:
         route = ElementJSX('Route')
-        route.set('path', f"'/{c.replace('Component','')}'")
+        route.set('path', f"'{base_route}{c.replace('Component','')}'")
         route.set('element', f"{{<{c}/>}}")
 
         routes.append(route)

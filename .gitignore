@@ -23,3 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 *__pycache__*
+src/jsx_files
+build/
+src/App.jsx
+src/Home.jsx
+src/page_exports.jsx
+docx_files\ copy/
+docx_files/*.html
+docx_files/archive/
