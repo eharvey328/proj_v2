@@ -3,7 +3,10 @@ import xml.etree.ElementTree as ET
 import pypandoc, sys, os
 
 def convert_docx_to_html(filename: str):
+    problem_characters = ['-',' ']
     new_filename = filename.replace('.docx','.html')
+    for c in problem_characters:
+        new_filename = new_filename.replace(c,'')
     print(f'Converting {filename} to {new_filename}')
     pypandoc.convert_file(filename,'html',outputfile=new_filename)
     return new_filename
@@ -33,6 +36,13 @@ def format_produced_html_file(filepath, add_wrapper=False):
         }
 
         td {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+        }
+
+        th {
             padding-left: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
