@@ -45,7 +45,7 @@ def construct_home_page(component_names: list[str], src_root_dir):
         li = ElementJSX('li')
         a = ElementJSX('Link')
         a.set('to', f"'{base_route}{c.replace('Component','')}'")
-        a.append(c.replace('Component',''))
+        a.append(c.replace('Component','').replace('_',' '))
 
         li.append(a)
         ol.append(li)

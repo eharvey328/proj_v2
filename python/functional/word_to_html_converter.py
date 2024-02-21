@@ -21,7 +21,6 @@ def add_html_wrapper(filepath):
     with open(filepath, 'w') as f:
         f.write(s)
     
-
 def format_produced_html_file(filepath, add_wrapper=False):
     print(f'Formatting {filepath}')
     if(add_wrapper): add_html_wrapper(filepath)
@@ -54,7 +53,7 @@ def format_produced_html_file(filepath, add_wrapper=False):
 
     # Set up head tag
     head = ET.Element('head')
-    head.append(get_table_styles())
+    # head.append(get_table_styles())
 
     # Set up body tag
     body = ET.Element('body')
@@ -79,6 +78,7 @@ def html_to_jsx_component_converter(html_filepath, jsx_dir_filepath):
     html_string = ''
     with open(html_filepath, 'r') as f:
         html_string = f.read()
+        html_string = html_string.replace('style="width:100%;"','')
 
     jsx_string = f'''
 function {component_name} (){{
@@ -90,6 +90,7 @@ function {component_name} (){{
 
 export {{{component_name}}}
     '''
+    
     with open(savepath,'w') as f:
         f.write(jsx_string)
 
