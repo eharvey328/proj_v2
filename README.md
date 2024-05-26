@@ -1,12 +1,12 @@
 Dependencies:
-    git: https://git-scm.com
-    npm: https://www.npmjs.com
-    python: https://www.python.org
+- git: https://git-scm.com
+- npm: https://www.npmjs.com
+- python: https://www.python.org
 
 Installation instructions:
-    git: https://git-scm.com/downloads
-    npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-    python: https://www.python.org/downloads/
+- git: https://git-scm.com/downloads
+- npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+- python: https://www.python.org/downloads/
 
 Once you have the dependencies installed, open up a terminal (or Powershell) window, and execute:
 
