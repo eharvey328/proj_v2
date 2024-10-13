@@ -11,13 +11,16 @@ Installation instructions:
 Once you have the dependencies installed, open up a terminal (or Powershell) window, and execute:
 
     git clone https://github.com/altyn-ge/proj_v2.git
+    cd proj_v2
     npm install
     python python/main.py
     npm run start
 
 To publish local changes to actual website, run
     
-    git run deploy
+    npm run deploy
+
+This will publish to https://altyn-ge.github.io/proj_v2/
 
 File Structure Overview:
 
