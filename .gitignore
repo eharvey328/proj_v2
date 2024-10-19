@@ -31,3 +31,4 @@ src/page_exports.jsx
 docx_files\ copy/
 docx_files/*.html
 docx_files/archive/
+.vercel

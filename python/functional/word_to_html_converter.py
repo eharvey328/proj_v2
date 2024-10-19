@@ -1,6 +1,7 @@
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import pypandoc, sys, os
+import shutil
 
 def convert_docx_to_html(filename: str):
     problem_characters = ['-',' ']
@@ -113,6 +114,9 @@ def convert_dir_of_docx_files_into_jsx_components(docx_dir_path, root_save_dir='
     if(root_save_dir == ''): root_save_dir = os.getcwd() 
 
     jsx_dir_path = root_save_dir+'/jsx_files'
+    if os.path.exists(jsx_dir_path):
+        shutil.rmtree(jsx_dir_path)
+        
     os.mkdir(jsx_dir_path)
 
     for f in os.listdir(docx_dir_path):
