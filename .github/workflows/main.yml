@@ -2,43 +2,49 @@ name: Build React App with Python Preprocessing
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
 
-    - name: Install Pandoc
-      run: |
-        wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb
-        sudo dpkg -i pandoc-3.1.8-1-amd64.deb
+      - name: Install Pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb
+          sudo dpkg -i pandoc-3.1.8-1-amd64.deb
 
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pypandoc
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pypandoc
 
-    - name: Run Python script
-      run: |
-        python python/main.py
+      - name: Run Python script
+        run: |
+          python python/main.py
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
 
-    - name: Install Node.js dependencies
-      run: npm ci
+      - name: Install Node.js dependencies
+        run: npm ci
 
-    - name: Build React app
-      run: npm run build
+      - name: Build React app
+        run: npm run build
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: "--prod"
