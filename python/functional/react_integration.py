@@ -2,7 +2,7 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 from functional.jsx_component import ElementJSX
 
-base_route='/proj_v2/'
+base_route='/'
 router = 'BrowserRouter'
 
 def get_component_import_string_and_list_from_page_exports_filepath(src_root_filepath):
