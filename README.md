@@ -16,12 +16,6 @@ Once you have the dependencies installed, open up a terminal (or Powershell) win
     python python/main.py
     npm run start
 
-To publish local changes to actual website, run
-    
-    npm run deploy
-
-This will publish to https://altyn-ge.github.io/proj_v2/
-
 File Structure Overview:
 
     docx_files/*  - contains word documents that python code converts into js code
