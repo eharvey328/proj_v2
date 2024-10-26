@@ -1,8 +1,20 @@
 import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
