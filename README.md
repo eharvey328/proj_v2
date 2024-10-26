@@ -4,8 +4,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+Install yarn
+
 ```bash
-# or
+npm install -g yarn@1.22.22
+```
+
+```bash
+yarn install
 yarn dev
 ```
 

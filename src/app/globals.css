@@ -12,3 +12,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.page-container {
+  @apply w-full max-w-5xl mx-auto p-3 sm:p-8;
+}

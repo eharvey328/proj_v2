@@ -7,20 +7,21 @@ export default async function Home() {
   const list = await getDocsList();
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-8">
-      <h1 className="text-2xl font-bold mb-6">СПИСКИ УБИТЫХ</h1>
-      <main className="grid">
+    <div className="page-container">
+      <h1 className="text-2xl font-bold mb-4">Списки Убитых</h1>
+      <ul className="sm:columns-2 lg:columns-3">
         {list.map((doc) => (
-          <Link
-            href={`/docs/${doc.slug}`}
-            key={doc.slug}
-            className="no-underline"
-            prefetch={false}
-          >
-            {doc.title}
-          </Link>
+          <li key={doc.slug}>
+            <Link
+              href={`/docs/${doc.slug}`}
+              prefetch={false}
+              className="whitespace-nowrap"
+            >
+              {doc.title}
+            </Link>
+          </li>
         ))}
-      </main>
+      </ul>
     </div>
   );
 }

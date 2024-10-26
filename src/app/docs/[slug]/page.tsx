@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getDocsList, getDocBySlug } from "@/lib/convertDocs";
+import { HtmlRenderer } from "./HtmlRenderer";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -45,14 +46,9 @@ export default async function DocumentPage({ params }: PageProps) {
   const { document } = result;
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
-      <div className="space-y-2">
-        <h1>{document.title}</h1>
-      </div>
-      <div
-        className="prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: document.content }}
-      />
+    <div className="page-container">
+      <h1>{document.title}</h1>
+      <HtmlRenderer html={document.content} className="flex flex-col gap-6" />
     </div>
   );
 }
