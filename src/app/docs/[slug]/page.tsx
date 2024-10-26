@@ -12,7 +12,7 @@ export async function generateStaticParams() {
   const list = await getDocsList();
   return list.map(({ slug }) => ({
     slug:
-      process.env.NODE_ENV === "production" ? slug : encodeURIComponent(slug),
+      process.env.NODE_ENV === "production" ? slug : encodeURIComponent(slug), // production auto encodes
   }));
 }
 
