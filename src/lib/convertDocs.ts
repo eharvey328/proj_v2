@@ -4,20 +4,15 @@ import mammoth from "mammoth";
 import { glob } from "glob";
 
 export async function getDocsList(): Promise<DocumentInfo[]> {
-  try {
-    const docsDirectory = resolve(process.cwd(), "docs");
-    const files = await glob("*.docx", { cwd: docsDirectory });
-    return files
-      .map((filename) => ({
-        filename,
-        title: formatTitle(filename),
-        slug: formatSlug(filename),
-      }))
-      .sort(sortDocsList);
-  } catch (error) {
-    console.error("Error getting doc slugs:", error);
-    return [];
-  }
+  const docsDirectory = resolve(process.cwd(), "docs");
+  const files = await glob("*.docx", { cwd: docsDirectory });
+  return files
+    .map((filename) => ({
+      filename,
+      title: formatTitle(filename),
+      slug: formatSlug(filename),
+    }))
+    .sort(sortDocsList);
 }
 
 function formatTitle(filename: string) {
@@ -48,16 +43,29 @@ export async function getDocBySlug(slug: string): Promise<ConversionResult> {
     const docsDirectory = resolve(process.cwd(), "docs");
     const filePath = resolve(docsDirectory, docInfo.filename);
     const buffer = await readFile(filePath);
-    const result = await mammoth.convertToHtml({ buffer }, { styleMap: [] });
+    const result = await mammoth.convertToHtml(
+      { buffer },
+      {
+        styleMap: [
+          "p[style-name='Body Text'] => p",
+          "p[style-name='Table Contents'] => p.doc-table-content",
+          "p[style-name='name'] => p.doc-name",
+          "p[style-name='cont'] => p.doc-cont",
+          "p[style-name='author'] => p.doc-author",
+          "p[style-name='Normal (Web)'] => p.doc-sources",
+          "r[style-name='Emphasis'] => i",
+        ],
+      }
+    );
 
-    // if (result.messages.length > 0) {
-    //   console.log(
-    //     "Conversion messages for",
-    //     docInfo.filename,
-    //     ":",
-    //     result.messages
-    //   );
-    // }
+    if (result.messages.length > 0) {
+      console.log(
+        "Conversion messages for",
+        docInfo.filename,
+        ":",
+        result.messages
+      );
+    }
 
     return {
       document: {
