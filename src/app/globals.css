@@ -3,17 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --app-header-height: 3rem;
+  --foreground: #181818;
+  --background: #fafafa;
+  --primary: #2563eb;
+  --app-header-height: 48px
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
 }
 
 .page-container {
-  @apply w-full max-w-5xl mx-auto p-4 sm:p-8;
+  @apply w-full max-w-5xl mx-auto px-4 sm:px-8;
+}
+
+.btn {
+  @apply px-2 py-1 my-2 rounded transition-colors
+}
+
+.h1 {
+  @apply text-4xl font-light mt-8 mb-12
 }
