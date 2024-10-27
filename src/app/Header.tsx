@@ -9,7 +9,7 @@ export function Header() {
 
   const navItems = [
     { path: "/", label: "Главная" },
-    { path: "/lists", label: "Списки Убитых" },
+    { path: "/lists", label: "Списки" },
     { path: "/about", label: "От Aвтора" },
     { path: "/contact", label: "Cообщение" },
   ];
@@ -23,21 +23,27 @@ export function Header() {
   }
 
   return (
-    <header className="flex border-b h-[var(--app-header-height)] fixed left-0 right-0 top-0 bg-background">
-      <div className="page-container !max-w-7xl flex items-center gap-4 justify-between">
-        <Link href="/" className="font-semibold">
+    <header className="flex border-b h-[var(--app-header-height)] sm:fixed left-0 right-0 top-0 bg-white">
+      <div className="page-container !max-w-7xl sm:flex items-center gap-4 justify-between">
+        <Link
+          href="/"
+          className="font-semibold whitespace-nowrap hidden sm:block"
+        >
           Казни женщин в России
         </Link>
         <nav>
-          <ul className="flex sm:gap-x-2">
+          <ul className="flex md:gap-x-2">
             {navItems.map((item) => (
-              <li key={item.path} className="flex items-center">
+              <li
+                key={item.path}
+                className="flex items-center max-sm:flex-1 max-sm:justify-center"
+              >
                 <Link
                   href={item.path}
                   className={clsx(
-                    "relative flex btn text-center text-zinc-500 hover:text-foreground text-sm",
+                    "relative flex btn text-center text-zinc-500 hover:text-foreground text-sm whitespace-nowrap",
                     {
-                      "text-foreground": isActivePath(item.path),
+                      "!text-foreground": isActivePath(item.path),
                     }
                   )}
                 >

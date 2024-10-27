@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <div className="page-container">
       <h1 className="h1">Списки Убитых</h1>
-      <ul className="sm:columns-2 md:columns-3">
+      <ul className="sm:columns-2 lg:columns-3">
         {list.map((doc) => (
           <li key={doc.slug} className="mb-2">
             <Link

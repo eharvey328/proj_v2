@@ -1,13 +1,10 @@
-import { ElementType } from "react";
 import parse, {
   DOMNode,
   domToReact,
   HTMLReactParserOptions,
 } from "html-react-parser";
-import { renderComponents } from "./renderComponents";
 import clsx from "clsx";
-
-type Components = Record<string, ElementType>;
+import { renderComponents } from "./renderComponents";
 
 type HtmlRendererProps = {
   html: string;
