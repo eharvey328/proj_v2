@@ -8,14 +8,14 @@ export default async function Home() {
 
   return (
     <div className="page-container">
-      <h1 className="text-2xl font-bold mb-4">Списки Убитых</h1>
-      <ul className="sm:columns-2 lg:columns-3">
+      <h1 className="h1">Списки Убитых</h1>
+      <ul className="sm:columns-2 md:columns-3">
         {list.map((doc) => (
-          <li key={doc.slug}>
+          <li key={doc.slug} className="mb-2">
             <Link
-              href={`/docs/${doc.slug}`}
+              href={`/lists/${doc.slug}`}
               prefetch={false}
-              className="whitespace-nowrap"
+              className="whitespace-nowrap hover:underline text-primary"
             >
               {doc.title}
             </Link>
