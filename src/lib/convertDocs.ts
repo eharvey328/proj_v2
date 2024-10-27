@@ -52,8 +52,12 @@ export async function getDocBySlug(slug: string): Promise<ConversionResult> {
           "p[style-name='name'] => p.doc-name",
           "p[style-name='cont'] => p.doc-cont",
           "p[style-name='author'] => p.doc-author",
+          "p[style-name='Heading'] => p.doc-heading",
           "p[style-name='Normal (Web)'] => p.doc-sources",
+          "p[style-name='HTML Preformatted'] => p.doc-html-preformatted",
+          "p[style-name='No Spacing'] => p",
           "r[style-name='Emphasis'] => i",
+          "r[style-name='y2iqfc'] => p",
         ],
       }
     );
@@ -86,9 +90,7 @@ export async function getDocBySlug(slug: string): Promise<ConversionResult> {
 }
 
 function findDocInfoBySlug(slug: string, list: DocumentInfo[]) {
-  return list.find((doc) =>
-    doc.slug.localeCompare(slug, "ru", { sensitivity: "base" })
-  );
+  return list.find((doc) => doc.slug === slug);
 }
 
 export interface DocumentInfo {

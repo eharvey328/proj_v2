@@ -1,5 +1,12 @@
 import { ContactForm } from "./ContactForm";
 
+export function generateMetadata() {
+  return {
+    title: "Cообщение | Казни женщин в России ",
+    description: ``,
+  };
+}
+
 export default async function ContactPage() {
   return (
     <div className="page-container">

@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { getDocsList, getDocBySlug } from "@/lib/convertDocs";
+import { ArrowRight } from "@/components/icons/ArrowRight";
 import { HtmlRenderer } from "./HtmlRenderer";
 
 export const dynamic = "force-static";
@@ -19,24 +21,25 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const resolvedParams = await params;
-  const decodedSlug = decodeURIComponent(resolvedParams.slug);
-  const result = await getDocBySlug(decodedSlug);
+  const slug = decodeURIComponent(resolvedParams.slug);
+  const result = await getDocBySlug(slug);
 
   if (!result.document) {
     return {
-      title: "Document Not Found",
+      title: "Казни женщин в России",
     };
   }
 
   return {
-    title: result.document.title,
-    description: `Information about ${result.document.title}`,
+    title: `${result.document.title} | Казни женщин в России`,
+    description: "",
   };
 }
 
 export default async function DocumentPage({ params }: PageProps) {
   const resolvedParams = await params;
-  const result = await getDocBySlug(resolvedParams.slug);
+  const slug = decodeURIComponent(resolvedParams.slug);
+  const result = await getDocBySlug(slug);
 
   if (!result.document) {
     console.error(`Error loading document: ${result.error}`);
@@ -47,7 +50,17 @@ export default async function DocumentPage({ params }: PageProps) {
 
   return (
     <div className="page-container">
-      <h1>{document.title}</h1>
+      <div className="flex items-center gap-2 mb-2">
+        <Link
+          href="/lists"
+          className="text-zinc-500 hover:text-foreground transition-colors text-sm"
+        >
+          Списки
+        </Link>
+        <ArrowRight className="text-zinc-500" />
+        <h1 className="text-sm">{document.title}</h1>
+      </div>
+
       <HtmlRenderer html={document.content} className="flex flex-col gap-6" />
     </div>
   );

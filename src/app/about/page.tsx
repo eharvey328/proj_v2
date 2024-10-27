@@ -1,3 +1,10 @@
+export function generateMetadata() {
+  return {
+    title: "От Aвтора | Казни женщин в России ",
+    description: ``,
+  };
+}
+
 export default async function AboutPage() {
   return (
     <div className="page-container">
