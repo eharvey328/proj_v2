@@ -1,20 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-        ],
-      },
-    ];
+  output: "export",
+  basePath: "/proj_v2",
+  images: {
+    unoptimized: true,
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
