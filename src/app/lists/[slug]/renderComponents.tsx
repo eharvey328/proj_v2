@@ -20,7 +20,7 @@ export const renderComponents: Record<string, ElementType> = {
   li: (props: ComponentProps<"li">) => <li {...props} />,
   a: (props: ComponentProps<"a">) => (
     <a
-      className="text-blue-600 hover:underline"
+      className="text-primary hover:underline"
       target="_blank"
       rel="noopener noreferrer nofollow"
       {...props}
@@ -29,23 +29,18 @@ export const renderComponents: Record<string, ElementType> = {
   table: (props: ComponentProps<"table">) => {
     const { children, ...rest } = props;
     return (
-      <div className="overflow-x-auto">
-        <table
-          className="min-w-full border-collapse border border-gray-300"
-          {...rest}
-        >
-          <tbody>{children}</tbody>
-        </table>
-      </div>
+      <table className=" border-collapse bg-white rounded" {...rest}>
+        <tbody>{children}</tbody>
+      </table>
     );
   },
   th: (props: ComponentProps<"th">) => (
-    <th className="border border-gray-300 p-2 bg-gray-50" {...props} />
+    <th className="border px-4 py-3" {...props} />
   ),
   td: (props: ComponentProps<"td">) => (
-    <td className="border border-gray-300 p-2" {...props} />
+    <td className="border px-4 py-3" {...props} />
   ),
   blockquote: (props: ComponentProps<"blockquote">) => (
-    <blockquote className="border-l-4 border-gray-300 pl-4 italic" {...props} />
+    <blockquote className="border-l-4 pl-4 italic" {...props} />
   ),
 };

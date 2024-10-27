@@ -86,9 +86,7 @@ export async function getDocBySlug(slug: string): Promise<ConversionResult> {
 }
 
 function findDocInfoBySlug(slug: string, list: DocumentInfo[]) {
-  return list.find((doc) =>
-    doc.slug.localeCompare(slug, "ru", { sensitivity: "base" })
-  );
+  return list.find((doc) => doc.slug === slug);
 }
 
 export interface DocumentInfo {

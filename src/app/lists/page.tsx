@@ -3,7 +3,14 @@ import { getDocsList } from "@/lib/convertDocs";
 
 export const dynamic = "force-static";
 
-export default async function Home() {
+export function generateMetadata() {
+  return {
+    title: "Списки | Казни женщин в России ",
+    description: ``,
+  };
+}
+
+export default async function ListsPage() {
   const list = await getDocsList();
 
   return (

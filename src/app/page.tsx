@@ -1,3 +1,10 @@
+export function generateMetadata() {
+  return {
+    title: "Главная | Казни женщин в России ",
+    description: ``,
+  };
+}
+
 export default async function Home() {
   return (
     <div className="page-container">
