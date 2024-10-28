@@ -18,18 +18,16 @@ export function TextField(props: TextFieldProps) {
   const id = propsId ?? `text--${label.replace("s+", "-")}`;
 
   return (
-    <div className="flex flex-col">
-      <label htmlFor={id} className="text-[16px] mb-2">
+    <div className="flex flex-col text-sm">
+      <label htmlFor={id} className="mb-2">
         {label}
-        {helperText && (
-          <div className="text-zinc-500 text-[14px]">{helperText}</div>
-        )}
+        {helperText && <div className="text-text-secondary">{helperText}</div>}
       </label>
 
       <input
         id={id}
         type={type}
-        className={clsx("border h-[40px] px-2 rounded", className)}
+        className={clsx("border h-[40px] px-2 bg-layer", className)}
         {...rest}
       />
     </div>

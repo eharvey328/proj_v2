@@ -14,7 +14,7 @@ export default async function ListsPage() {
   const list = await getDocsList();
 
   return (
-    <div className="page-container">
+    <div className="page-container page-section">
       <h1 className="h1">Списки Убитых</h1>
       <ul className="sm:columns-2 lg:columns-3">
         {list.map((doc) => (
@@ -22,7 +22,7 @@ export default async function ListsPage() {
             <Link
               href={`/lists/${doc.slug}`}
               prefetch={false}
-              className="whitespace-nowrap hover:underline text-primary"
+              className="whitespace-nowrap hover:underline"
             >
               {doc.title}
             </Link>

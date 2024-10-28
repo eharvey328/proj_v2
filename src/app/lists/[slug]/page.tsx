@@ -49,15 +49,15 @@ export default async function DocumentPage({ params }: PageProps) {
   const { document } = result;
 
   return (
-    <div className="page-container">
-      <div className="flex items-center gap-2 mb-2">
+    <div className="page-container page-section">
+      <div className="flex items-center gap-2 mb-6">
         <Link
           href="/lists"
-          className="text-zinc-500 hover:text-foreground transition-colors text-sm"
+          className="text-text-secondary hover:text-foreground transition-colors text-sm"
         >
           Списки
         </Link>
-        <ArrowRight className="text-zinc-500" />
+        <ArrowRight className="text-text-secondary" />
         <h1 className="text-sm">{document.title}</h1>
       </div>
 

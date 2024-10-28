@@ -3,16 +3,19 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { chunk } from "lodash-es";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 import { ImageFile } from "@/lib/getImages";
-import { Ticker } from "@/components/Ticker";
+import { Ticker } from "./Ticker";
 import { ImageAutoDimentions } from "@/components/ImageAutoDimentions";
 
 interface ImageGridProps {
   images: ImageFile[];
+  className?: string;
 }
 
 export function ImageGrid(props: ImageGridProps) {
-  const { images } = props;
+  const { images, className } = props;
+  const rowHeight = 160;
   const rowCount = 3;
   const minImageWidth = 120;
   const gap = 8;
@@ -27,14 +30,19 @@ export function ImageGrid(props: ImageGridProps) {
     setSelectedImages(chunks);
   }, [images]);
 
+  const gridHeight = rowHeight * rowCount + gap * (rowCount + 1); // rowCount + padding
+
   return (
     <div
-      className="flex flex-col bg-black relative min-h-[608px]"
-      style={{ padding: `${gap}px` }}
+      className={clsx("flex flex-col bg-stone-900 relative", className)}
+      style={{
+        padding: `${gap}px`,
+        minHeight: `${gridHeight}px`,
+      }}
     >
       <div className="flex flex-col" style={{ gap: `${gap}px` }}>
         {selectedImages.map((imageChunk, rowIndex) => (
-          <Ticker key={rowIndex} className="h-48" gap={gap}>
+          <Ticker key={rowIndex} gap={gap} style={{ height: `${rowHeight}px` }}>
             {imageChunk.map((image, imageIndex) => (
               <motion.div
                 key={`${image.filename}-${rowIndex}-${imageIndex}`}
@@ -42,7 +50,7 @@ export function ImageGrid(props: ImageGridProps) {
                 style={{ minWidth: `${minImageWidth}px` }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: imageIndex * 0.1 }}
+                transition={{ duration: 0.5 }}
               >
                 <ImageAutoDimentions
                   className="w-auto h-full object-contain"
@@ -50,7 +58,7 @@ export function ImageGrid(props: ImageGridProps) {
                   alt={image.displayName}
                   priority
                 />
-                <p className="absolute bottom-0 px-[1px] left-0 text-[10px] bg-black/70 text-white">
+                <p className="absolute bottom-0 px-[1px] left-0 text-[10px] bg-stone-900/70 text-white">
                   {image.displayName}
                 </p>
               </motion.div>
@@ -59,7 +67,9 @@ export function ImageGrid(props: ImageGridProps) {
         ))}
       </div>
 
-      {/* <div className="absolute inset-0 bg-gradient-to-r from-black/90 from-0% via-black/40 via-50% to-black/90 to-100%" /> */}
+      <div className="absolute inset-0 bg-stone-900/60" />
+      <div className="absolute top-0 bottom-0 left-0 w-36 bg-gradient-to-r from-stone-900 to-transparent" />
+      <div className="absolute top-0 bottom-0 right-0 w-36 bg-gradient-to-l from-stone-900 to-transparent" />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export function generateMetadata() {
 
 export default async function AboutPage() {
   return (
-    <div className="page-container">
+    <div className="page-container page-section">
       <h1 className="h1">От Aвтора</h1>
 
       <div className="flex flex-col gap-4">

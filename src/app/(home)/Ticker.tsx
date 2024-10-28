@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { motion, useAnimationControls } from "framer-motion";
+import { motion, MotionProps, useAnimationControls } from "framer-motion";
 import clsx from "clsx";
 import React from "react";
 
@@ -10,10 +10,11 @@ interface TickerProps {
   className?: string;
   gap?: number; // pixels between images
   speed?: number; // pixels per second
+  style?: MotionProps["style"];
 }
 
 export function Ticker(props: TickerProps) {
-  const { children, className, gap = 8, speed = 50 } = props;
+  const { children, className, gap = 8, speed = 50, style } = props;
   const containerRef = useRef<HTMLDivElement>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const [contentWidth, setContentWidth] = useState(0);
@@ -70,7 +71,7 @@ export function Ticker(props: TickerProps) {
       <motion.div
         ref={rowRef}
         className={clsx("flex", className)}
-        style={{ gap: `${gap}px` }}
+        style={{ gap: `${gap}px`, ...style }}
         animate={controls}
         initial={{ x: 0 }}
       >

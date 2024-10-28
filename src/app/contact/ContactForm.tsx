@@ -19,7 +19,7 @@ export function ContactForm() {
   return (
     <form
       ref={formRef}
-      className="flex flex-col gap-6 border p-6 sm:p-8 rounded bg-white"
+      className="flex flex-col gap-6 border p-4 sm:p-6"
       onSubmit={handleSubmit}
     >
       <TextField label="Имя" required name="name" />
@@ -38,7 +38,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="bg-foreground text-background px-4 py-2 rounded hover:bg-zinc-800 transition-colors mt-4"
+        className="bg-foreground text-background px-4 py-2 hover:bg-stone-300 transition-colors mt-4 min-w-48"
       >
         Oтправить
       </button>
