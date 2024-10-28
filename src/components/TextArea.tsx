@@ -11,7 +11,7 @@ export function TextArea(props: TextAreaProps) {
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={id} className="text-[14px] leading-tight mb-1">
+      <label htmlFor={id} className="leading-tight mb-1">
         {label}
       </label>
 

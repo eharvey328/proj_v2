@@ -25,9 +25,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main id="main-content">
-          <div className="py-8 sm:mt-[var(--app-header-height)]">
-            {children}
-          </div>
+          <div className="sm:mt-[var(--app-header-height)]">{children}</div>
         </main>
       </body>
     </html>
