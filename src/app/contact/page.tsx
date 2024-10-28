@@ -9,7 +9,7 @@ export function generateMetadata() {
 
 export default async function ContactPage() {
   return (
-    <div className="page-container">
+    <div className="page-container page-section">
       <h1 className="h1">Оставьте Сообщение</h1>
 
       <ContactForm />

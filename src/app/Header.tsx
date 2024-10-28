@@ -23,14 +23,8 @@ export function Header() {
   }
 
   return (
-    <header className="flex border-b h-[var(--app-header-height)] sm:fixed left-0 right-0 top-0 bg-white">
-      <div className="page-container !max-w-7xl sm:flex items-center gap-4 justify-between">
-        <Link
-          href="/"
-          className="font-semibold whitespace-nowrap hidden sm:block"
-        >
-          Казни женщин в России
-        </Link>
+    <header className="flex border-b h-[var(--app-header-height)] sm:fixed left-0 right-0 top-0">
+      <div className="page-container sm:flex items-center gap-4">
         <nav>
           <ul className="flex md:gap-x-2">
             {navItems.map((item) => (
@@ -41,7 +35,7 @@ export function Header() {
                 <Link
                   href={item.path}
                   className={clsx(
-                    "relative flex btn text-center text-zinc-500 hover:text-foreground text-sm whitespace-nowrap",
+                    "relative flex btn text-center text-text-secondary hover:text-foreground text-sm whitespace-nowrap",
                     {
                       "!text-foreground": isActivePath(item.path),
                     }

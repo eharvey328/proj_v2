@@ -9,12 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-primary)"],
+        serif: ["Georgia", "serif"],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--primary)",
+        "text-secondary": "var(--text-secondary)",
+        layer: "var(--layer)",
+        accent: "var(--accent)",
+        link: "var(--link)",
+        border: "var(--border)",
       },
     },
   },

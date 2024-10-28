@@ -10,14 +10,19 @@
     "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
+    "@motionone/utils": "^10.18.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.11.10",
     "html-react-parser": "^5.1.18",
+    "lodash-es": "^4.17.21",
     "mammoth": "^1.8.0",
     "next": "15.0.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "uuid": "^11.0.1"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.9.0",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",

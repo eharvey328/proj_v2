@@ -10,14 +10,14 @@ export function TextArea(props: TextAreaProps) {
   const id = propsId ?? `text--${label.replace("s+", "-")}`;
 
   return (
-    <div className="flex flex-col">
-      <label htmlFor={id} className="text-[14px] leading-tight mb-1">
+    <div className="flex flex-col text-sm">
+      <label htmlFor={id} className="leading-tight mb-1">
         {label}
       </label>
 
       <textarea
         id={id}
-        className={clsx("border p-2 rounded", className)}
+        className={clsx("border p-2 bg-layer", className)}
         rows={rows}
         {...rest}
       />
