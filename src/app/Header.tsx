@@ -23,7 +23,7 @@ export function Header() {
   }
 
   return (
-    <header className="flex border-b h-[var(--app-header-height)] sm:fixed left-0 right-0 top-0">
+    <header className="flex border-b h-[var(--app-header-height)] sm:fixed left-0 right-0 top-0 ">
       <div className="page-container sm:flex items-center gap-4">
         <nav>
           <ul className="flex md:gap-x-2">
