@@ -21,15 +21,16 @@ export function TextField(props: TextFieldProps) {
     <div className="flex flex-col text-sm">
       <label htmlFor={id} className="mb-2">
         {label}
-        {helperText && <div className="text-text-secondary">{helperText}</div>}
       </label>
-
       <input
         id={id}
         type={type}
-        className={clsx("border h-[40px] px-2 bg-layer", className)}
+        className={clsx("border h-10 px-2 bg-layer", className)}
         {...rest}
       />
+      {helperText && (
+        <div className="text-text-secondary text-xs mt-1">{helperText}</div>
+      )}
     </div>
   );
 }

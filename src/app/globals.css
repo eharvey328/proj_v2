@@ -42,5 +42,5 @@ body {
 }
 
 .h1 {
-  @apply text-xl sm:text-3xl font-light mb-4 sm:mt-2 sm:mb-8 font-serif
+  @apply text-xl sm:text-3xl font-light mb-6 sm:mt-2 sm:mb-8 font-serif
 }

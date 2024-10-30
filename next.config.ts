@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: process.env.NODE_ENV === "production" ? "/proj_v2" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/proj_v/" : "",
   reactStrictMode: true,
 };
 
