@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@motionone/utils": "^10.18.0",
