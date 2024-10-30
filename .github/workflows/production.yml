@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install Yarn
+        run: npm install -g yarn@1.22.22
+
       - name: Install dependencies
-        run: |
-          corepack enable
-          yarn set version stable
-          yarn install --immutable
+        run: yarn install --frozen-lockfile
 
       - name: Build
         run: yarn build
