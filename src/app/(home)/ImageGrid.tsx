@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { chunk } from "lodash-es";
 import { motion } from "framer-motion";
 import clsx from "clsx";
