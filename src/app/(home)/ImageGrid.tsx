@@ -31,8 +31,6 @@ export function ImageGrid(props: ImageGridProps) {
 
   const gridHeight = rowHeight * rowCount + gap * (rowCount - 1);
 
-  const baseUrl = process.env.NODE_ENV === "production" ? "/proj_v2" : "";
-
   return (
     <div
       className={clsx("flex flex-col bg-stone-900 relative", className)}
@@ -54,7 +52,7 @@ export function ImageGrid(props: ImageGridProps) {
               >
                 <Image
                   className="w-auto h-full object-contain select-none"
-                  src={`${baseUrl}/img/${image.filename}`}
+                  src={`/proj_v2/img/${image.filename}`}
                   alt={image.displayName}
                   width={image.width}
                   height={image.height}
