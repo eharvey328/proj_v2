@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { TextArea } from "@/components/TextArea";
 import { TextField } from "@/components/TextField";
 import { StatusMessage } from "@/components/StatusMessage";
+import clsx from "clsx";
 
 export function ContactForm() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
   const [result, setResult] = useState<boolean | null>(null);
 
@@ -14,13 +16,17 @@ export function ContactForm() {
     setResult(null);
     event.preventDefault();
     setIsSending(true);
-    const result = await sendEmail(event.currentTarget);
-    setResult(result.success);
+    const response = await sendEmail(event.currentTarget);
+    if (response.success) {
+      event.currentTarget.reset();
+    }
+    setResult(response.success);
     setIsSending(false);
   }
 
   return (
     <form
+      ref={formRef}
       className="flex flex-col gap-6 border p-4 sm:p-6"
       onSubmit={handleSubmit}
     >
@@ -40,7 +46,9 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="bg-foreground text-background px-4 py-2 hover:bg-stone-300 transition-colors mt-4 min-w-48"
+        className={clsx(
+          "bg-foreground text-background px-4 py-2 hover:bg-stone-300 disabled:!bg-stone-400 transition-colors mt-4 min-w-48 disabled:cursor-not-allowed"
+        )}
         disabled={isSending}
       >
         {isSending ? "Oтправка..." : "Oтправить"}
