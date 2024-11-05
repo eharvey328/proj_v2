@@ -10,6 +10,7 @@
     "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@motionone/utils": "^10.18.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.10",
@@ -32,6 +33,7 @@
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
   }
 }
