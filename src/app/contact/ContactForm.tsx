@@ -1,24 +1,26 @@
 "use client";
 
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { TextArea } from "@/components/TextArea";
 import { TextField } from "@/components/TextField";
-import { FormEvent, useRef } from "react";
+import { StatusMessage } from "@/components/StatusMessage";
 
 export function ContactForm() {
-  const formRef = useRef<HTMLFormElement>(null);
+  const [isSending, setIsSending] = useState(false);
+  const [result, setResult] = useState<boolean | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (!formRef.current) return;
-
-    const formData = new FormData(formRef.current);
-    const data = Object.fromEntries(formData);
-    console.log(data);
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    setResult(null);
+    event.preventDefault();
+    setIsSending(true);
+    const result = await sendEmail(event.currentTarget);
+    setResult(result.success);
+    setIsSending(false);
   }
 
   return (
     <form
-      ref={formRef}
       className="flex flex-col gap-6 border p-4 sm:p-6"
       onSubmit={handleSubmit}
     >
@@ -39,9 +41,36 @@ export function ContactForm() {
       <button
         type="submit"
         className="bg-foreground text-background px-4 py-2 hover:bg-stone-300 transition-colors mt-4 min-w-48"
+        disabled={isSending}
       >
-        Oтправить
+        {isSending ? "Oтправка..." : "Oтправить"}
       </button>
+
+      {result === true && <StatusMessage>Сообщение отправлено!</StatusMessage>}
+      {result === false && (
+        <StatusMessage type="error">
+          Невозможно отправить сообщение
+        </StatusMessage>
+      )}
     </form>
   );
+}
+
+async function sendEmail(form: EventTarget & HTMLFormElement) {
+  try {
+    const result = await emailjs.sendForm(
+      process.env.EMAILJS_SERVICE_ID!,
+      process.env.EMAILJS_TEMPLATE_ID!,
+      form,
+      process.env.EMAILJS_PUBLIC_KEY
+    );
+
+    if (result.status === 200) {
+      return { success: true };
+    }
+
+    return { success: false };
+  } catch {
+    return { success: false };
+  }
 }
