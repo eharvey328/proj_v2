@@ -1,11 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { chunk } from "lodash-es";
-import { motion } from "framer-motion";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import clsx from "clsx";
 import { ImageFile } from "@/lib/getImages";
-import { Ticker } from "./Ticker";
 import Image from "next/image";
 
 interface ImageGridProps {
@@ -13,66 +11,129 @@ interface ImageGridProps {
   className?: string;
 }
 
+const rowHeight = 160;
+const rowCount = 3;
+const gap = 0;
+const gridHeight = rowHeight * rowCount + gap * (rowCount - 1);
+
 export function ImageGrid(props: ImageGridProps) {
   const { images, className } = props;
-  const rowHeight = 160;
-  const rowCount = 3;
-  const gap = 8;
-  const [selectedImages, setSelectedImages] = useState<ImageFile[][]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [columnCount, setColumnCount] = useState(0);
 
-  useEffect(() => {
-    const imageCount = 50;
-    const randomImages = images
-      .sort(() => 0.5 - Math.random())
-      .slice(0, imageCount);
-    const chunks = chunk(randomImages, Math.ceil(imageCount / rowCount));
-    setSelectedImages(chunks);
+  const randomImages = useMemo(() => {
+    const imgsCopy = [...images];
+    imgsCopy.sort(() => 0.5 - Math.random());
+    return imgsCopy;
   }, [images]);
 
-  const gridHeight = rowHeight * rowCount + gap * (rowCount - 1);
+  useEffect(() => {
+    const calculateDimensions = () => {
+      if (!containerRef.current) return;
+      const containerWidth = containerRef.current.offsetWidth;
+      const baseImageWidth = rowHeight * 0.75; // Using 3:4 as base ratio
+      const cols = Math.max(1, Math.floor(containerWidth / baseImageWidth));
+      setColumnCount(cols);
+    };
+
+    calculateDimensions();
+    window.addEventListener("resize", calculateDimensions);
+    return () => window.removeEventListener("resize", calculateDimensions);
+  }, []);
+
+  const layout = useMemo(() => {
+    return layoutImages(randomImages, columnCount);
+  }, [randomImages, columnCount]);
 
   return (
     <div
-      className={clsx("flex flex-col bg-stone-900 relative", className)}
-      style={{ padding: `${gap}px` }}
+      ref={containerRef}
+      className={clsx(className)}
+      style={{ margin: `${gap}px`, minHeight: gridHeight }}
     >
       <div
-        className="flex flex-col"
-        style={{ gap: `${gap}px`, minHeight: `${gridHeight}px` }}
+        className="grid h-full relative"
+        style={{
+          gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+          gridTemplateRows: "repeat(3, 1fr)",
+          gridAutoFlow: "dense",
+          gap: `${gap}px`,
+        }}
       >
-        {selectedImages.map((imageChunk, rowIndex) => (
-          <Ticker key={rowIndex} gap={gap} style={{ height: `${rowHeight}px` }}>
-            {imageChunk.map((image, imageIndex) => (
-              <motion.div
-                key={`${image.filename}-${rowIndex}-${imageIndex}`}
-                className="h-full relative flex-none min-w-32"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Image
-                  className="w-auto h-full object-contain select-none"
-                  src={`/proj_v2/img/${image.filename}`}
-                  alt={image.displayName}
-                  width={image.width}
-                  height={image.height}
-                  placeholder="blur"
-                  blurDataURL={image.blurDataURL}
-                  quality={70}
-                  priority
-                />
-                <p className="absolute bottom-0 px-[1px] left-0 text-[10px] bg-stone-900/70 text-white select-none">
-                  {image.displayName}
-                </p>
-              </motion.div>
-            ))}
-          </Ticker>
-        ))}
+        <AnimatePresence>
+          {layout.map(({ image, span }) => (
+            <motion.div
+              key={`${image.filename}`}
+              className="relative h-full w-full"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              style={{
+                gridColumn: `span ${span}`,
+                maxHeight: rowHeight,
+              }}
+            >
+              <Image
+                className="h-full object-cover select-none pointer-events-none"
+                src={`/proj_v2/img/${image.filename}`}
+                alt={image.displayName}
+                width={image.width}
+                height={image.height}
+                placeholder="blur"
+                blurDataURL={image.blurDataURL}
+                quality={70}
+                priority
+              />
+              <p className="absolute bottom-0 px-[1px] left-0 text-[10px] bg-stone-900/70 text-white">
+                {image.displayName}
+              </p>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
-
-      <div className="absolute inset-0 bg-stone-900/60" />
-      <div className="absolute top-0 bottom-0 left-0 w-36 bg-gradient-to-r from-stone-900 to-transparent" />
-      <div className="absolute top-0 bottom-0 right-0 w-36 bg-gradient-to-l from-stone-900 to-transparent" />
     </div>
   );
+}
+
+function layoutImages(images: ImageFile[], columnCount: number) {
+  let currentRow = 0;
+  let currentCol = 0;
+  const gridCells: any[] = [];
+
+  if (!columnCount) {
+    return gridCells;
+  }
+
+  while (currentRow < rowCount) {
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+      const remainingCols = columnCount - currentCol;
+      const colSpan = image.isWide ? 2 : 1;
+
+      if (colSpan <= remainingCols) {
+        gridCells.push({
+          image,
+          row: currentRow,
+          col: currentCol,
+          span: colSpan,
+        });
+
+        currentCol += colSpan;
+        if (currentCol >= columnCount) {
+          currentRow++;
+          currentCol = 0;
+        }
+
+        if (currentRow >= rowCount) break;
+      }
+    }
+
+    // If we can't fit any more images in this row, move to next row
+    if (currentCol < columnCount && currentRow < rowCount) {
+      currentRow++;
+      currentCol = 0;
+    }
+  }
+
+  return gridCells;
 }

@@ -21,6 +21,11 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
       - name: Install Yarn
         run: npm install -g yarn@1.22.22
 

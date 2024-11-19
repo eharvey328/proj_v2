@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-secondary)", "Georgia", "serif"],
+        primary: ["var(--font-primary)", "sans serif"],
+        secondary: ["var(--font-secondary)", "Georgia", "serif"],
       },
       colors: {
         background: "var(--background)",

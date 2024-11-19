@@ -1,8 +1,10 @@
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="flex items-center w-full border-t">
-      <div className="page-container text-xs text-text-secondary py-2">
-        © 2024 Licensed under MIT.
+    <footer className="flex items-center w-full border-t theme-dark bg-background">
+      <div className="page-container text-xs py-3 text-foreground">
+        © {year} Licensed under MIT.
       </div>
     </footer>
   );

@@ -7,9 +7,8 @@ export function generateMetadata() {
 
 export default async function AboutPage() {
   return (
-    <div className="page-container page-section">
-      <h1 className="h1">От Aвтора</h1>
-
+    <section className="page-container mx-auto max-w-4xl pt-16">
+      <h1 className="h1 mb-10">От aвтора</h1>
       <div className="flex flex-col gap-4">
         <p>
           Почему мы должны помнить имена женщин, расстрелянных и погибших в
@@ -20,7 +19,6 @@ export default async function AboutPage() {
           Глубже и пахать нельзя Мы ведь пашем на погосте, Разрыхляем верхний
           слой. Мы задеть боимся кости, Чуть прикрытые землей” В.Шаламов
         </p>
-
         <p>
           В данном проекте “Женское лицо расстрелов“…или “У расстрелов женские
           лица “ (zhenschiny.VMN.net.) собраны анкетные данные из формуляров (в
@@ -45,6 +43,6 @@ export default async function AboutPage() {
           мы
         </p>
       </div>
-    </div>
+    </section>
   );
 }
