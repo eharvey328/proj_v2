@@ -32,8 +32,8 @@ export default async function Home() {
       </section>
 
       <section>
-        <div className="page-container">
-          <h2 className="text-2xl font-secondary pt-24 pb-16">Section Title</h2>
+        <div className="page-container py-24">
+          <h2 className="text-2xl font-secondary pb-16">Section Title</h2>
           <div className="grid grid-cols-3 gap-4">
             <HomeTile title="Списки убитых" href="/lists" />
             <HomeTile title="От автора" href="/about" />
