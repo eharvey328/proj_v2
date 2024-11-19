@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className="flex flex-col h-full">
         <Header />
         <main id="main-content" className="flex-1">
-          <div className="sm:mt-[var(--app-header-height)]">{children}</div>
+          <div className="mt-[var(--app-header-height)]">{children}</div>
         </main>
         <Footer />
       </body>

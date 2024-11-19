@@ -23,7 +23,7 @@ export default async function ListsPage() {
 
   return (
     <section className="page-container">
-      <div className="grid grid-cols-3 pt-16">
+      <div className="grid sm:grid-cols-3 py-16 gap-6">
         <h1 className="h1">Списки убитых</h1>
         <div>
           <h2 className="mb-5 font-semibold">Списки по национальностям</h2>

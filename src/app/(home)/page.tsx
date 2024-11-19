@@ -14,8 +14,8 @@ export default async function Home() {
   const allImages = await getImages();
   return (
     <>
-      <section className="bg-[#1b170f] flex">
-        <div className="flex-1 text-layer px-4 sm:px-6 md:px-9 pt-24">
+      <section className="bg-[#1b170f] grid md:grid-cols-2">
+        <div className="text-layer px-4 sm:px-6 md:px-9 py-24">
           <div className="mb-1 text-sm text-background font-secondary">
             с 1918 по 1953 гг.
           </div>
@@ -28,7 +28,7 @@ export default async function Home() {
           </p>
         </div>
 
-        <ImageGrid className="w-1/2" images={allImages} />
+        <ImageGrid images={allImages} />
       </section>
 
       <section>
@@ -55,7 +55,12 @@ function HomeTile(props: HomeTileProps) {
   const { title, href, className } = props;
   return (
     <Link className="text-foreground" href={href}>
-      <div className={clsx("w-full border min-h-[300px]", className)}>
+      <div
+        className={clsx(
+          "w-full border min-h-[150px] lg:min-h-[250px]",
+          className
+        )}
+      >
         {title}
       </div>
     </Link>
