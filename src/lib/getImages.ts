@@ -8,6 +8,7 @@ export interface ImageFile {
   blurDataURL: string;
   width: number;
   height: number;
+  isWide: boolean;
 }
 
 export async function getImages(): Promise<ImageFile[]> {
@@ -23,12 +24,16 @@ export async function getImages(): Promise<ImageFile[]> {
         getImageDimensions(fullPath),
       ]);
 
+      const aspectRatio = dimensions.width / dimensions.height;
+      const isWide = aspectRatio > 1;
+
       return {
         filename,
         displayName: filename.replace(/\.[^/.]+$/, ""),
         blurDataURL,
         width: dimensions.width,
         height: dimensions.height,
+        isWide,
       };
     });
 

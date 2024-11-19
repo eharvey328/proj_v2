@@ -25,29 +25,25 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      ref={formRef}
-      className="flex flex-col gap-6 border p-4 sm:p-6"
-      onSubmit={handleSubmit}
-    >
-      <TextField label="Имя" required name="name" />
+    <form ref={formRef} className="flex flex-col gap-8" onSubmit={handleSubmit}>
+      <TextField label="Ваше имя*" required name="name" />
       <TextField
-        label="Адрес электронной почты"
+        label="Адрес электронной почты*"
         type="email"
         name="email"
         required
       />
       <TextField
-        label="Имя испытуемой женщины (необязательно)"
+        label="Имя убитой женщины"
         name="subject"
-        helperText="Если ваше сообщение касается конкретной женщины в наших записях"
+        helperText="Если это имя уже есть в списках, пожалуйста, укажите список"
       />
-      <TextArea label="Сообщение" name="message" required />
+      <TextArea label="Сообщение*" name="message" required />
 
       <button
         type="submit"
         className={clsx(
-          "bg-foreground text-background px-4 py-2 hover:bg-stone-300 disabled:!bg-stone-400 transition-colors mt-4 min-w-48 disabled:cursor-not-allowed"
+          "bg-foreground text-background px-4 py-2 hover:bg-stone-800 disabled:!bg-black/60 transition-colors mt-4 min-w-48 disabled:cursor-not-allowed"
         )}
         disabled={isSending}
       >

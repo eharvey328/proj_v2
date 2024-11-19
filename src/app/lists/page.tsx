@@ -15,26 +15,32 @@ export function generateMetadata() {
 export default async function ListsPage() {
   const list = await getDocsList();
 
-  const [withYear, withoutYear] = partition(list, (doc) =>
-    /19\d{2}/.test(doc.title)
+  const [byYear, rest] = partition(list, (doc) => /19\d{2}/.test(doc.title));
+
+  const [byRegion, byNationality] = partition(rest, (doc) =>
+    doc.slug.startsWith("женщины")
   );
 
   return (
-    <div className="page-container page-section">
-      <h1 className="h1">Списки Убитых</h1>
-      <div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
-        <div className="max-sm:border-b pb-4 sm:pb-0 sm:border-r">
-          <h2 className="mb-2 font-bold font-serif">
-            Списки по Национальности
-          </h2>
-          <ListSection list={withoutYear} />
-        </div>
+    <section className="page-container">
+      <div className="grid grid-cols-3 pt-16">
+        <h1 className="h1">Списки убитых</h1>
         <div>
-          <h2 className="mb-2 font-bold font-serif">Списки по Годам</h2>
-          <ListSection list={withYear} />
+          <h2 className="mb-5 font-semibold">Списки по национальностям</h2>
+          <ListSection list={byNationality} />
+        </div>
+        <div className="flex flex-col gap-6">
+          <div>
+            <h2 className="mb-5 font-semibold">Списки по область</h2>
+            <ListSection list={byRegion} />
+          </div>
+          <div>
+            <h2 className="mb-5 font-semibold">Списки по годам</h2>
+            <ListSection list={byYear} />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -48,11 +54,11 @@ function ListSection({
   return (
     <ul className={clsx(className)}>
       {list.map((doc) => (
-        <li key={doc.slug} className="mb-1">
+        <li key={doc.slug} className="mb-2">
           <Link
             href={`/lists/${doc.slug}`}
             prefetch={false}
-            className="whitespace-nowrap hover:underline"
+            className="whitespace-nowrap hover:underline text-text-secondary"
           >
             {doc.title}
           </Link>
