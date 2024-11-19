@@ -98,7 +98,7 @@ export function ImageGrid(props: ImageGridProps) {
 function layoutImages(images: ImageFile[], columnCount: number) {
   let currentRow = 0;
   let currentCol = 0;
-  const gridCells: any[] = [];
+  const gridCells: LayoutGridCell[] = [];
 
   if (!columnCount) {
     return gridCells;
@@ -136,4 +136,11 @@ function layoutImages(images: ImageFile[], columnCount: number) {
   }
 
   return gridCells;
+}
+
+interface LayoutGridCell {
+  image: ImageFile;
+  row: number;
+  col: number;
+  span: number;
 }
