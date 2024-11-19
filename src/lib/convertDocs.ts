@@ -1,7 +1,6 @@
 import path from "path";
 import { glob } from "glob";
-// @ts-ignore
-import pandoc from "node-pandoc";
+import nodePandoc from "node-pandoc";
 
 export async function getDocsList(): Promise<DocumentInfo[]> {
   const docsDirectory = path.resolve(process.cwd(), "docs");
@@ -42,7 +41,7 @@ export async function getDocBySlug(slug: string): Promise<ConversionResult> {
   const docsDirectory = path.resolve(process.cwd(), "docs");
   const filePath = path.resolve(docsDirectory, docInfo.filename);
   const content = await new Promise<string>((resolve, reject) => {
-    pandoc(filePath, "-f docx -t html5", (error: string, result: string) => {
+    nodePandoc(filePath, "-f docx -t html5", (error, result) => {
       if (error) reject(error);
       resolve(result);
     });
