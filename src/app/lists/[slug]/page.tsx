@@ -55,7 +55,7 @@ export default async function DocumentPage({ params }: PageProps) {
             href="/lists"
             className="text-text-secondary hover:text-foreground transition-colors text-sm"
           >
-            Списки
+            Списки убитых
           </Link>
           <ArrowRight className="text-text-secondary" />
           <h1 className="text-sm">{result.data.title}</h1>
