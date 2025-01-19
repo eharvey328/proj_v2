@@ -2,7 +2,6 @@ import { ComponentProps } from "react";
 import { SvgIcon } from "./SvgIcon";
 
 export function Error(props: ComponentProps<"svg">) {
-  const { className, ...rest } = props;
   return (
     <SvgIcon {...props}>
       <path

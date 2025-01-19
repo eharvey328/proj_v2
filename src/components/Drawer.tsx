@@ -63,6 +63,3 @@ export function Drawer(props: DrawerProps) {
     </AnimatePresence>
   );
 }
-function useMediaQuery(arg0: string) {
-  throw new Error("Function not implemented.");
-}
