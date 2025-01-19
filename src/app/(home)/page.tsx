@@ -34,7 +34,7 @@ export default async function Home() {
       <section>
         <div className="page-container py-24">
           <h2 className="text-2xl font-secondary pb-16">Section Title</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4">
             <HomeTile title="Списки убитых" href="/lists" />
             <HomeTile title="От автора" href="/about" />
             <HomeTile title="Оставьте сообщение" href="/contact" />

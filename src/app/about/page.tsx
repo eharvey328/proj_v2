@@ -7,7 +7,7 @@ export function generateMetadata() {
 
 export default async function AboutPage() {
   return (
-    <section className="page-container mx-auto max-w-5xl py-16">
+    <section className="page-container mx-auto max-w-5xl py-12 sm:py-16">
       <h1 className="text-lg mb-6">От aвтора</h1>
 
       <h2 className="h1 mb-10">
